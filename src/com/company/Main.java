@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
             Scanner sc=new Scanner(System.in);
+
             float h;
             float r;
             float vol,area;
@@ -14,7 +15,15 @@ public class Main {
 
             r=sc.nextFloat();
 
-            h=sc.nextFloat();
+            h = sc.nextFloat();
+
+            while ( r <0 && h < 0 ){
+                    System.out.println("Numbers cant be negative");
+
+                    r = sc.nextFloat();
+                    h = sc.nextFloat();
+
+            }
 
             vol=(float)22/7*r*r*h;
 
@@ -23,13 +32,6 @@ public class Main {
             System.out.println("Volume of cylinder="+vol);
 
             System.out.println("Total Surface Area="+area);
-
-
-
-
-
-
-
 
     }
 }
