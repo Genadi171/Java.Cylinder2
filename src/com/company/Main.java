@@ -6,18 +6,19 @@ public class Main {
     public static void main(String[] args) {
 
             Scanner sc=new Scanner(System.in);
-
-            float radius,height,vol,area;
+            float h;
+            float r;
+            float vol,area;
 
             System.out.println("Enter radius and height of a cylinder:");
 
-            radius=sc.nextFloat();
+            r=sc.nextFloat();
 
-            height=sc.nextFloat();
+            h=sc.nextFloat();
 
-            vol=(float)22/7*radius*radius*height;
+            vol=(float)22/7*r*r*h;
 
-            area=2*(float)22/7*radius*(radius+height);
+            area=2*(float)22/7*r*(r+h);
 
             System.out.println("Volume of cylinder="+vol);
 
